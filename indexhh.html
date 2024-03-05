@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords"
+        content="resume, web developer, programmer, code, engineer, HTML, CSS, JavaScript, Node, React, Express, SQL, MongoDB, AWS, Heroku, Git, Python, Java">
+    <title>ChristyWelsh.gq</title>
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.min.css" />
+    <link rel="stylesheet" href="styleshh.css">
+
+</head>
+
+<body>
+    <div class='bodycontainer'>
+
+        <!-- Navbar -->
+        <div id="navbar">
+            <ul>
+                <li>
+                    <a id='resume' target="_blank" href='./WebResume.pdf'>Resume</a>
+                </li>
+                <li>
+                    <a href="#projects">Portfolio</a>
+                </li>
+                <li>
+                    <a href="#cap">About Me</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Top Panel -->
+        <div class="col-12">
+            <img src="./images/photo.png" alt="" id="face">
+        </div>
+        <div class='col-12'>
+            <h1 id="me">Christy Welsh</h1>
+        </div>
+        <div class='col-12'>
+            <h4 id="title">Software Engineer</h4>
+        </div>
+
+        <!-- Projects -->
+        <div id="projects">
+            <div class='col-12'>
+                <h2>Portfolio</h2>
+                <h4 id="instructions">tap each square for details</h4>
+            </div>
+
+            <!-- boom backend -->
+            <div class="row">
+                <div class='col-12'>
+                    <button id="btn" onclick="clickFunction(this)"><img class="projimg" src="./images/boomlogo.png"
+                            alt="Boom" style="display: inline-block">
+                        <!-- toggle tap -->
+                        <div class="features" style="display: none">Boom backend work:
+                            <ul>
+                                <li>Revamped microservices' logging system, shortening development time and
+                                    increasing ease of
+                                    debugging and crash resolution by 95%</li>
+                                <li>Implemented new JSON event tracking that supports 1 million active
+                                    monthly users, reducing
+                                    costs, and streamlining Boom’s use of Confluent Kafka</li>
+                            </ul>
+                            <a href="https://www.booment.com/" target="_blank" title="Booment.com">
+                                <img class="grow icon" src="./images/boomlogo.png" alt="Boom"></a>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <!-- dfs -->
+            <div class="row">
+                <div class='col-12'>
+                    <button id="btn" onclick="clickFunction(this)"><img class="projimg"
+                            src="./images/boomfantasylogohh.png" alt="Boom Fantasy" style="display: inline-block">
+                        <!-- toggle tap -->
+                        <div class="features" style="display: none">
+                            In support of the premier release, I wrote a backend microservice that handles cash and points transactions for withdrawals and
+                            payments to Boom’s Daily Fantasy Sports app, which collected over $100,000 in entries in one
+                            day just 4 months after launch.
+                            <div class="togglelinks">
+                                <a href="https://play.google.com/store/apps/details?id=com.booment.fantasy"
+                                    target="_blank" title="DFS on Google Play">
+                                    <img class="grow icon" src="./images/googleplay3.png" alt="Google Play Store"></a>
+                                <a id="anchors" href="https://www.boomfantasy.com/" target="_blank"
+                                    title="BoomFantasy.com">
+                                    <img class="grow icon" src="./images/boomfantasylogo.png" alt="Boom"></a>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <!-- tim hortons -->
+            <div class="row">
+                <div class='col-12'>
+                    <button id="btn" onclick="clickFunction(this)"><img class="projimg" src="./images/timhortons.png"
+                            alt="Tim Hortons" style="display: inline-block">
+                        <!-- toggle tap -->
+                        <div class="features" style="display: none">
+                            In support of Tim Horton's Hockey Challenge App, my team developed an
+                            interactive
+                            ranking system for over 500k users by creating the backend of a new
+                            leaderboard feature, which drove the Hockey Challenge 2021-22 NHL season
+                            release.
+                            <div class="togglelinks">
+                                <a href="https://play.google.com/store/apps/details?id=digital.rbi.timhortons&hl=en_US&gl=US"
+                                    target="_blank" title="Hockey Challenge on Google Play">
+                                    <img class="grow icon" src="./images/googleplay3.png" alt="Google Play Store"></a>
+                                <a id="anchors" href="https://www.timhortons.ca/tims-nhl-hockey-challenge/"
+                                    target="_blank" title="Tim Horton's Hockey Challenge">
+                                    <img class="grow icon" src="./images/thlogo.png" alt="chirp"></a>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <!-- chirp -->
+            <div class="row">
+                <div class='col-12'>
+                    <button id="btn" onclick="clickFunction(this)"><img class="projimg" src="./images/chirp.png"
+                            alt="chirp" style="display: inline-block">
+                        <!-- toggle tap -->
+                        <div class="features" style="display: none">
+                            I fixed dozens of frontend bugs and added features critical to game play
+                            for the release of an improved version of Chirp,
+                            a fantasy golf app that follows the PGA Tour.
+                            <div class="togglelinks">
+                                <a href="https://play.google.com/store/apps/details?id=com.boomsports.chirp"
+                                    target="_blank" title="Chirp Golf on Google Play">
+                                    <img class="grow icon" src="./images/googleplay3.png" alt="Google Play Store"></a>
+                                <a id="anchors" href="https://www.getchirpgolf.com/" target="_blank"
+                                    title="GetChirpGolf.com">
+                                    <img class="grow icon" src="./images/chirplogo.jpeg" alt="chirp"></a>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <!-- investigatorspace -->
+            <div class="row">
+                <div class='col-12'>
+                    <button id="btn" onclick="clickFunction(this)"><img class="projimg" src="./images/ismobileV2hh.png"
+                            alt="ISMobile" style="display: inline-block">
+                        <!-- toggle tap -->
+                        <div class="features" style="display: none">
+                            InvestigatorSpace Mobile organizes regulatory documentation for clinical
+                            research doctors. I created iOS and Android builds for delivery
+                            to the
+                            Apple and Google Play Stores, built new features, and improved UX using
+                            React Native, Android Studio, Xcode and a PHP/SQL backend.
+                            <div class="togglelinks">
+                                <a href="https://play.google.com/store/apps/details?id=com.trifecta.ismobilev2"
+                                    target="_blank">
+                                    <img class="github" src="./images/googleplay3.png" alt="Google Play Store"></a>
+                                <a id="anchors" href="https://www.linkedin.com/company/trifectaclinical/"
+                                    target="_blank">
+                                    <img class="github" src="./images/trifecta.png" alt="trifecta"></a>
+                                <a id="anchors" href="https://youtu.be/BUVEN4mIWnA" target="_blank"><img
+                                        src="./images/youtube.png" class="github" alt="youtube"></a>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <!-- rainy day blog -->
+            <div class="row">
+                <div class='col-12'>
+                    <button id="btn" onclick="clickFunction(this)"><img class="projimg" src="./images/blogpic.png"
+                            alt="Blog" style="display: inline-block">
+                        <!-- toggle tap -->
+                        <div class="features" style="display: none">Rainy Day Blog:
+                            <ul>
+                                <li>HTML/React Frontend</li>
+                                <li>Bootstrap & CSS</li>
+                                <li>Login authentication</li>
+                                <li>Express.JS REST API</li>
+                                <li>Many-to-many MySQL db</li>
+                                <li>Deployment on AWS</li>
+                            </ul>
+                            <a href="https://www.youtube.com/watch?v=l1Rs5hOCpSk" target="_blank"><img class="github"
+                                    src="./images/youtube.png" alt="youtube"></a>
+                            <a href="https://github.com/christycakes/blogapp" target="_blank"><img class="github"
+                                    src="./images/github.png" alt="github"></a>
+                        </div>
+                    </button>
+                </div>
+            </div>
+            <!-- Vanilla JavaScript Sample 
+            <div class="row">
+                <div class='col-12'>
+                    <button id="btn" onclick="clickFunction(this)"><img class="projimg" src="./images/jssample.png"
+                            alt="screenshot" style="display: inline-block">-->
+            <!-- toggle tap
+                        <div class="features" style="display: none">
+                            Visit this repository to see my vanilla JavaScript skills. It
+                            contains a small application that consumes test
+                            scores and displays the data with a REST API.
+                            <div>
+                                <a href="https://github.com/christycakes/JavaScript-Sample" target="_blank"><img
+                                        src="./images/github.png" class="github" alt="github"></a>
+                            </div>
+                        </div>
+                    </button>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- About Me -->
+        <div class="container">
+            <h2 id="cap">About Me</h2>
+            <div class="row" id="aboutme">
+                <div class="col-md-12">
+                    <div class="main-timeline4">
+                        <div class="timeline">
+                            <div class="timeline-content">
+                                <span class="year">2024</span>
+                                <div class="inner-content">
+                                    <h3 class="title">Senior Software<br>Engineer</h3>
+                                    <p class="description">
+                                        Since 2021, I have been working with a team of engineers at <a target="_blank"
+                                            class="timelineresume" href='https://www.booment.com'>Boom Entertainment</a>
+                                        on
+                                        both proprietary and client driven
+                                        applications. I was promoted from Software Engineer II early this year. See my <a target="_blank" href='./WebResume.pdf'
+                                            class="timelineresume">Full
+                                            Resume</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-content">
+                                <span class="year">2019</span>
+                                <div class="inner-content">
+                                    <h3 class="title">Software Engineer</h3>
+                                    <p class="description">
+                                        My first engineering role was with <a target="_blank" class="trifectalink"
+                                            href='https://www.trifectaclinical.com'>Trifecta Clinical</a>, a company
+                                        that
+                                        creates software for clinical trial researchers. I completed both frontend and
+                                        backend work and rebuilt a mobile application.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-content">
+                                <span class="year">2018</span>
+                                <div class="inner-content">
+                                    <h3 class="title">Full Stack Student</h3>
+                                    <p class="description">
+                                        In 2018, I completed a full stack web development curriculum. I
+                                        primarily
+                                        studied at
+                                        Covalence.io, but also completed courses with Udacity, MongoDB
+                                        University, & others. I am a lifelong learner and my goal is to grow my skillset
+                                        daily.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-content">
+                                <span class="year">2017</span>
+                                <div class="inner-content">
+                                    <h3 class="title">Math Teacher</h3>
+                                    <p class="description">
+                                        Before jumping into the world of programming, I was a tenured high school math
+                                        teacher. I hold a California Teacher's Credential and six years of leadership
+                                        experience in public education.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="timeline">
+                            <div class="timeline-content">
+                                <span class="year">2011</span>
+                                <div class="inner-content">
+                                    <h3 class="title">Technical Writer</h3>
+                                    <p class="description">
+                                        In addition to a BA degree, I hold a Technical Writing Certificate. I am a
+                                        published writer of
+                                        science news stories and other technical papers. See a
+                                        <a target="_blank" class="writingsample"
+                                            href='./WritingSample.pdf'>writing
+                                            sample</a>.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Skills -->
+        <div class='skills'>
+            <div class="row">
+                <div title="JavaScript" class="col-2">
+                    <img src="./images/javascript.png" alt="JavaScript">
+                </div>
+                <div title="React.js" class="col-2">
+                    <img src="./images/react.png" alt="React">
+                </div>
+                <div title="Typescript" class="col-2">
+                    <img src="./images/typescript.jpg" alt="Typescript">
+                </div>
+                <div title="Node.js Express.js" class="col-2">
+                    <img src="./images/node.png" alt="Node">
+                </div>
+                <div title="NPM" class="col-2">
+                    <img src="./images/npm.png" alt="NPM">
+                </div>
+                <div title="MongoDB, Mongoose, & MongoDB Compass" class="col-2">
+                    <img src="./images/mongodb.png" alt="Mongo">
+                </div>
+                <div title="Google Cloud Platform" class="col-2">
+                    <img src="./images/gcp.png" alt="GCP">
+                </div>
+                <div title="BigQuery" class="col-2">
+                    <img src="./images/bq.png" alt="BQ">
+                </div>
+                <div title="Kafka" class="col-2">
+                    <img src="./images/kafka.jpg" alt="Confluent Kafka">
+                </div>
+                <div title="Github" class="col-2">
+                    <img src="./images/githubskill.png" alt="Github">
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        function clickFunction(btn) {
+            const projectimage = btn.firstElementChild;
+            const feats = btn.lastElementChild;
+
+            if (projectimage.style.display === "inline-block") {
+                projectimage.style.display = "none";
+                feats.style.display = "inline-block";
+            } else {
+                projectimage.style.display = "inline-block";
+                feats.style.display = "none"
+            }
+        }
+    </script>
+    <script src=" https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>
